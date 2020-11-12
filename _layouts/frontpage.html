@@ -65,24 +65,26 @@ format: frontpage
 <div id="bkg-color2">
     <div class="row">
 
-    <!-- left part -->
+        <!-- left part -->
+    <div class="medium-6 columns">
+        {% for post in site.posts limit:1 %}
+<!--            {% if post.subheadline %}<p class="subheadline">{{ post.subheadline }}</p>{% endif %} -->
+
+            <h3><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+        <p>
+            {% if post.meta_description %}{{ post.meta_description | strip_html | escape }}{% else post.teaser %}{{ post.teaser | strip_html | escape }}{% endif %}
+            <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" title="Read {{ post.title escape_once }}"><strong>{{ site.data.language.read_more }}</strong></a>
+        </p>
+        {% endfor %}
+    </div><!-- /.medium-5.columns -->
+
+    <!-- right part -->
   <div class="medium-6 columns">
             <h4><strong>{{ site.data.language.news_headline }}</strong></h4>
             {% include list-posts entries='2' offset='1' %}
   </div><!-- /.medium-7.columns -->
 
-    <!-- right part -->
-        <div class="medium-6 columns">
-            {% for post in site.posts limit:1 %}
-<!--            {% if post.subheadline %}<p class="subheadline">{{ post.subheadline }}</p>{% endif %} -->
 
-                <h3><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
-            <p>
-                {% if post.meta_description %}{{ post.meta_description | strip_html | escape }}{% else post.teaser %}{{ post.teaser | strip_html | escape }}{% endif %}
-                <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" title="Read {{ post.title escape_once }}"><strong>{{ site.data.language.read_more }}</strong></a>
-            </p>
-            {% endfor %}
-        </div><!-- /.medium-5.columns -->
 
 
     </div><!-- /.row -->
