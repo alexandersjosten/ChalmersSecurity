@@ -10,7 +10,7 @@ breadcrumb: true
 categories: people
     ## choose one : phd, postdoc, professor OR former-member
 tags:
-    - phd
+    - former-member
 address: "Rännvägen 6, Room: 5453, 5th floor (EDIT-building) - Department of Computer Science and Engineering, Chalmers University of Technology, 412-96, Gothenburg, Sweden"
 linkedin: "https://it.linkedin.com/in/elena-pagnin-2b55098b"
 researchgate: "https://www.researchgate.net/profile/Elena_Pagnin"
