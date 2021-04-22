@@ -9,5 +9,5 @@ breadcrumb: true
 categories: people
     ## choose one : phd, postdoc, professor OR former-member
 tags:
-    - phd
+    - former-member
 ---
