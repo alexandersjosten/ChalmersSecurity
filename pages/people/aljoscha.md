@@ -10,7 +10,7 @@ breadcrumb: true
 ## choose one : phd, postdoc, professor or former-member
 categories: people
 tags:
-    - phd
+    - former-member
 telephone: 
 address: "Rännvägen 6, Room: 119, 5th floor (EDIT-building) - Department of Computer Science and Engineering, Chalmers University of Technology, 412-96, Gothenburg, Sweden"
 linkedin: " "
