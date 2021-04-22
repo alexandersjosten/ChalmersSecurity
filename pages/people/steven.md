@@ -9,6 +9,6 @@ categories: people
 
 ## choose : phd, postdoc, professor or former-member
 tags:
-    - postdoc
+    - former-member
 
 ---
