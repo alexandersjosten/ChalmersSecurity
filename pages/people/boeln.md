@@ -12,8 +12,6 @@ categories: people
 tags:
     - phd
 address: "Rännvägen 6, Room: 5123, 5th floor (EDIT-building) - Department of Computer Science and Engineering, Chalmers University of Technology, 412-96, Gothenburg, Sweden"
-linkedin: " "
-researchgate: " "
 ---
 I am a PhD student in the Computer Science and Engineering Department in the Network and Systems Division at Chalmers University of Technology since July 2015. 
 My research topic is big data and differential privacy. 

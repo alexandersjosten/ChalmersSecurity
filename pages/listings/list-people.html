@@ -38,22 +38,27 @@ header:
       {% capture pub %}http://publications.lib.chalmers.se/rweb/index.xsql?personID={{ page.cid }}{% endcapture %}
     {% endif %}
 
-    <article class="post">
+      {% if cat  !='former-member' %}
+      <article class="post">
+        <a  class="small-link primary-link"  href="{{ ws }}">{{ page.fname }} {{ page.lname }}</a>
+        <div class="entry">
+          <img src="{{ site.urlimg }}/people/{{ page.pic }}" style="width:150px;height:200px">
+        </div>
+        </p>{{ em }}</p>
+        <a  class="small-link primary-link"  href="{{ pub }}">Publications </a>
 
-      <div class="entry">
-        <img src="{{ site.urlimg }}/people/{{ page.pic }}" width="970" width="1293" itemprop="image">
-      </div>
-      <a  class="small-link primary-link"  href="{{ ws }}">{{ page.fname }} {{ page.lname }}</a>
-      </p>{{ em }}</p>
-      <a  class="small-link primary-link"  href="{{ pub }}">Publications </a>
 
-    <p class="text-left">
-      <!-- <a href="{{ ws }}"><img  src="{{ site.url }}{{ site.baseurl }}/assets/icons/icon-website.svg" width="50" height="50"></a> -->
-      {% if page.github %}<a href="{{ page.github }}"><img  src="{{ site.url }}{{ site.baseurl }}/assets/icons/icon-github.svg" width="30" height="30"></a>{% endif %}
-      {% if page.linkedin %}<a href="{{ page.linkedin }}"><img  src="{{ site.url }}{{ site.baseurl }}/assets/icons/icon-linkedin.svg" width="30" height="37"></a>{% endif %}
-      {% if page.researchgate %}<a href="{{ page.researchgate }}"><img  src="{{ site.url }}{{ site.baseurl }}/assets/icons/icon-researchgate.png" width="30" height="30"></a>{% endif %}
-      {% if page.googlescholar %}<a href="{{ page.googlescholar }}"><img  src="{{ site.url }}{{ site.baseurl }}/assets/icons/icon-googlescholar.png" width="30" height="30"></a>{% endif %}
-    </p>
+        <p class="text-left">
+          <!-- <a href="{{ ws }}"><img  src="{{ site.url }}{{ site.baseurl }}/assets/icons/icon-website.svg" width="50" height="50"></a> -->
+          {% if page.github %}<a href="{{ page.github }}"><img  src="{{ site.url }}{{ site.baseurl }}/assets/icons/icon-github.svg" width="30" height="30"></a>{% endif %}
+          {% if page.linkedin %}<a href="{{ page.linkedin }}"><img  src="{{ site.url }}{{ site.baseurl }}/assets/icons/icon-linkedin.svg" width="30" height="37"></a>{% endif %}
+          {% if page.researchgate %}<a href="{{ page.researchgate }}"><img  src="{{ site.url }}{{ site.baseurl }}/assets/icons/icon-researchgate.png" width="30" height="30"></a>{% endif %}
+          {% if page.googlescholar %}<a href="{{ page.googlescholar }}"><img  src="{{ site.url }}{{ site.baseurl }}/assets/icons/icon-googlescholar.png" width="30" height="30"></a>{% endif %}
+        </p>
+      {% else %}
+        <article class="former-post" style="color:#334D5C; padding-bottom: 1%">
+        </p>{{ page.fname }} {{ page.lname }}</p>
+      {% endif %}
 
     </article>
 

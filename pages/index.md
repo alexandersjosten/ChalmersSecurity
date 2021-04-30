@@ -14,7 +14,8 @@ header:
 
 widget1:
   title: "Cryptography"
-  url: "http://www.cse.chalmers.se/~aikmitr/Projects.html"
+#  url: "http://www.cse.chalmers.se/~aikmitr/Projects.html"
+  url: "../"
   image: 'lock.jpg'
   text: '<ul>
   <li>Homomorphic Encryption</li>
@@ -25,7 +26,8 @@ widget1:
 
 widget2:
   title: "Secure Software Engineering"
-  url: 'http://www.scandariato.org'
+#  url: 'http://www.scandariato.org'
+  url: "../"
   image: 'threat.jpg'
   text: '</ul>
   <li>Security and Privacy by design</li>
@@ -34,7 +36,8 @@ widget2:
 
 widget3:
   title: "Network Security"
-  url: 'netsec'
+#  url: 'netsec'
+  url: "../"
   video: '<iframe src="https://player.vimeo.com/video/56874383" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
   text: '<ul>
   <li>Firewalls</li>
@@ -43,7 +46,8 @@ widget3:
 
 widget4:
   title: "Privacy"
-  url: 'privacy'
+#  url: 'privacy'
+  url: "../"
   image: 'privacy.jpg'
   text: '<ul>
   <li>Differential Privacy </li>
@@ -53,7 +57,8 @@ widget4:
 
 widget6:
   title: "Software Security"
-  url: 'prolangsec'
+#  url: 'prolangsec'
+  url: "../"
   video: '<iframe src="https://player.vimeo.com/video/82206652" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
   text: '<ul>
   <li>Web Security</li>
@@ -63,7 +68,8 @@ widget6:
 
 widget5:
   title: "Our two Campuses"
-  url: "campus"
+#  url: "campus"
+  url: "../"
   video: '<iframe src="https://player.vimeo.com/video/171066926" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
   text: 'Chalmers has two large campuses in Gothenburg, campus Johanneberg and Lindholmen.'
 #

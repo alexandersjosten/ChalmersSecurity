@@ -13,9 +13,5 @@ tags:
     - former-member
 telephone: 
 address: "Rännvägen 6, Room: 119, 5th floor (EDIT-building) - Department of Computer Science and Engineering, Chalmers University of Technology, 412-96, Gothenburg, Sweden"
-linkedin: " "
-github: " "
-researchgate: " "
-googlescholar: " "
 ---
 I am a PhD student in the Computer Science and Engineering department.

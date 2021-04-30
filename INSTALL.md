@@ -5,7 +5,8 @@ and `make run` to build the page.
 
 
 OLD:
-After cloning the repository and installing needed packages , you can see the site by running the following commands in terminal:
+After cloning the repository and installing needed packages , you can see the site by running the following commands in 
+terminal:
 
 ```sh
 $ git clone git@github.com:ebadi/ChalmersSecurity.git
@@ -17,7 +18,8 @@ $ bundle exec jekyll serve // for using _config.yml
 Server address: http://127.0.0.1:4000/research/group/security/
 
 ### jekyll
-If jeykell is not installed, you can install it using your package manager but if the version of jeykell is not compatible with this project you can [install it using RubyGems][jekyll-install].
+If jeykell is not installed, you can install it using your package manager but if the version of jeykell is not 
+compatible with this project you can [install it using RubyGems][jekyll-install].
 ```sh
 $ sudo gem install nodejs
 $ sudo apt-get install ruby-dev
