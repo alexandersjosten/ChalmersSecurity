@@ -4,7 +4,7 @@ fname: "Aljoscha"
 lname: "Lautenbach" # This is also used to fetch list of  publications
 cid : "aljoscha"  # for creating email/web addresss
 pic: aljoscha.jpg
-permalink: "nasser.nowdehi/" # you can use the same as previous line here
+## permalink: "/" # you can use the same as previous line here
 teaser: "I am a PhD student in the Computer Science and Engineering department."
 breadcrumb: true
 ## choose one : phd, postdoc, professor or former-member

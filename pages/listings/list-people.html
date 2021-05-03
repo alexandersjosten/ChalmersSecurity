@@ -46,12 +46,10 @@ header:
         <div class="entry">
           <img src="{{ site.urlimg }}/people/{{ page.pic }}" style="width:100%;height:200px">
         </div>
-<!--        </p>{{ em }}</p>-->
         <a  class="small-link primary-link"  href="{{ pub }}">Publications </a>
 
 
         <p class="text-left">
-          <!-- <a href="{{ ws }}"><img  src="{{ site.url }}{{ site.baseurl }}/assets/icons/icon-website.svg" width="50" height="50"></a> -->
           {% if page.github %}<a href="{{ page.github }}"><img  src="{{ site.url }}{{ site.baseurl }}/assets/icons/icon-github.svg" width="30" height="30"></a>{% endif %}
           {% if page.linkedin %}<a href="{{ page.linkedin }}"><img  src="{{ site.url }}{{ site.baseurl }}/assets/icons/icon-linkedin.svg" width="30" height="37"></a>{% endif %}
           {% if page.researchgate %}<a href="{{ page.researchgate }}"><img  src="{{ site.url }}{{ site.baseurl }}/assets/icons/icon-researchgate.png" width="30" height="30"></a>{% endif %}
@@ -64,10 +62,10 @@ header:
 
     </article>
 
-        {% endif %}   <!-- cat-match-p -->
-      {% endfor %}  <!-- page-category -->
-  {% endfor %}  <!-- page -->
+        {% endif %}
+      {% endfor %}
+  {% endfor %}
 
 
 </div>
-{% endfor %}  <!-- cat -->
+{% endfor %}
