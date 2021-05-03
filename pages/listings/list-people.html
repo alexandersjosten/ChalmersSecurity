@@ -18,7 +18,7 @@ header:
                         </center> </h1>
   </div>
 
-  {% assign sorted_pages = (site.pages | sort: 'fname') %}
+  {% assign sorted_pages = site.pages | sort: 'fname' %}
   {% for page in  sorted_pages %}
       {% for pc in page.tags %}
         {% if pc == cat %}
@@ -58,7 +58,7 @@ header:
           {% if page.googlescholar %}<a href="{{ page.googlescholar }}"><img  src="{{ site.url }}{{ site.baseurl }}/assets/icons/icon-googlescholar.png" width="30" height="30"></a>{% endif %}
         </p>
       {% else %}
-        <article class="former-post" style="color:#334D5C; padding-bottom: 1%">
+        <article class="post" style="color:#334D5C; padding-bottom: 1%">
         </p>{{ page.fname }} {{ page.lname }}</p>
       {% endif %}
 

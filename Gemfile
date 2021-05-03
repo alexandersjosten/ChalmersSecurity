@@ -7,3 +7,4 @@ gem 'jekyll-scholar'
 gem 'rexml', '~> 3.2', '>= 3.2.4'
 gem 'bibtex-ruby'
 gem "webrick", "~> 1.7"
+gem "jekyll-paginate"
