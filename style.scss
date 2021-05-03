@@ -23,12 +23,13 @@
 
 
 .post {
-  width: 160px;
+  width: 172px;
   float: left;
   vertical-align: top;
   margin: 0 20px 0 0;
   height: 320px;
   overflow: hidden;
+  text-align: center;
   @include mobile {
     margin: 0 20px;
     width: 300px;
@@ -40,4 +41,9 @@
   min-height: 60px;
   margin: 0 0 12px;
   letter-spacing: normal;
+}
+
+.name_post{
+  margin-bottom: 10%;
+  font-size: large;
 }

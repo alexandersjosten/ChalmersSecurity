@@ -36,7 +36,7 @@
 ------------------------------------------------------------------- */
 
 .border-dotted {
-  border: 1px dotted $grey-5;
+  // border: 1px dotted $grey-5;
   padding: rem-calc(20);
   border-radius: $global-radius;
 }
@@ -65,7 +65,7 @@
   .alert-box a {
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
     color: #fff;
-    border-bottom: 1px dotted #fff;
+    //border-bottom: 1px dotted #fff;
   }
   .alert-box a:hover {
     border-bottom: 1px solid #fff;

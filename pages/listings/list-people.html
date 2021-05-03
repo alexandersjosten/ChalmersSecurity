@@ -13,11 +13,11 @@ header:
                         
                           {% if cat  =='phd' %} PhD Students  {% endif %}
 
-                          {% if cat  =='postdoc' %} Postdoc researchers  {% endif %}
+                          {% if cat  =='postdoc' %} Postdoc Researchers  {% endif %}
                           {% if cat  =='professor' %} Faculty  {% endif %}
                         </center> </h1>
   </div>
-<ul>
+
   {% assign sorted_pages = (site.pages | sort: 'fname') %}
   {% for page in  sorted_pages %}
       {% for pc in page.tags %}
@@ -40,11 +40,13 @@ header:
 
       {% if cat  !='former-member' %}
       <article class="post">
-        <a  class="small-link primary-link"  href="{{ ws }}">{{ page.fname }} {{ page.lname }}</a>
-        <div class="entry">
-          <img src="{{ site.urlimg }}/people/{{ page.pic }}" style="width:150px;height:200px">
+        <div class="name_post">
+          <a  class="small-link primary-link"  href="{{ ws }}">{{ page.fname }} {{ page.lname }}</a>
         </div>
-        </p>{{ em }}</p>
+        <div class="entry">
+          <img src="{{ site.urlimg }}/people/{{ page.pic }}" style="width:100%;height:200px">
+        </div>
+<!--        </p>{{ em }}</p>-->
         <a  class="small-link primary-link"  href="{{ pub }}">Publications </a>
 
 
@@ -66,6 +68,6 @@ header:
       {% endfor %}  <!-- page-category -->
   {% endfor %}  <!-- page -->
 
-</ul>
+
 </div>
 {% endfor %}  <!-- cat -->

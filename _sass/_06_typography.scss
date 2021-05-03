@@ -62,11 +62,11 @@ p {
 p a,
 article a {
     font-weight: bold;
-    border-bottom: 1px dotted;
+    // border-bottom: 1px dotted;
 }
 p a:hover,
 article a:hover {
-    border-bottom: 2px solid;
+    // border-bottom: 2px solid;
 }
 p a.button,
 .button,
@@ -144,7 +144,7 @@ figcaption,
 }
 figcaption a,
 .masthead-caption a {
-    border-bottom: 1px dotted $grey-4;
+    //border-bottom: 1px dotted $grey-4;
     color: $grey-10;
 }
 figcaption a:hover,
