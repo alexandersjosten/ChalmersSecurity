@@ -1,15 +1,15 @@
 {% if page.header == NULL and page.header.image_fullwidth == NULL and page.header.pattern == NULL and page.header.background-color == NULL and page.header.title == NULL %}
 
-<div id="masthead-no-image-header">
-	<div class="row">
-		<div class="small-12 columns">
-			<h1> {{ site.title }} – {{ site.slogan }} </h1>
-			<a id="logo" href="{{ site.url }}{{ site.baseurl }}" title="{{ site.title }} – {{ site.slogan }}">
-				<img src="{{ site.urlimg }}{{ page.header.image_fullwidth }}"  width="100%" alt="{{ site.title }} – {{ site.slogan }}">
-			</a>
-		</div><!-- /.small-12.columns -->
-	</div><!-- /.row -->
-</div><!-- /#masthead -->
+<!--<div id="masthead-no-image-header">-->
+<!--	<div class="row">-->
+<!--		<div class="small-12 columns">-->
+<!--			<h1> {{ site.title }} – {{ site.slogan }} </h1>-->
+<!--			<a id="logo" href="{{ site.url }}{{ site.baseurl }}" title="{{ site.title }} – {{ site.slogan }}">-->
+<!--				<img src="{{ site.urlimg }}{{ page.header.image_fullwidth }}"  width="100%" alt="{{ site.title }} – {{ site.slogan }}">-->
+<!--			</a>-->
+<!--		</div>&lt;!&ndash; /.small-12.columns &ndash;&gt;-->
+<!--	</div>&lt;!&ndash; /.row &ndash;&gt;-->
+<!--</div>&lt;!&ndash; /#masthead &ndash;&gt;-->
 
 {% if page.breadcrumb == true %}
 {% include _breadcrumb.html %}
