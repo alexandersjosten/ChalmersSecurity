@@ -79,11 +79,17 @@ include: ['.htaccess']
 # Exclude these files from your production _site
 exclude:
     - .sass-cache
+    - Dockerfile
     - Gemfile
     - Gemfile.lock
-    - LICENSE
-    - README.md
+    - HOWTO.md
     - INSTALL.md
+    - LICENSE
+    - local_config.yml
+    - Makefile
+    - README.md
+    - deploy.sh
+    - upload.sh
 
 
 # The language setting is used in /includes/header.html for html-settings
@@ -100,6 +106,8 @@ compress_html:
   ignore:
     envs: [development]
 
+# Render posts with future dates.
+future: true
 
 #
 #       ____       ____            ____
