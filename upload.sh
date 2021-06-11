@@ -24,6 +24,6 @@ fi
 echo "Using '${CID}' as CID." >&2
 RHOST="${CID}@remote11.chalmers.se"
 RPATH="/chalmers/groups/security/www/www.cse.chalmers.se"
-rsync -priv --checksum $* \
+rsync -riv --checksum $* \
   _site/ \
   "${RHOST}:${RPATH}"
