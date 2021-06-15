@@ -24,6 +24,8 @@ fi
 echo "Using '${CID}' as CID." >&2
 RHOST="${CID}@remote11.chalmers.se"
 RPATH="/chalmers/groups/security/www/www.cse.chalmers.se"
-rsync -riv --checksum $* \
-  _site/ \
-  "${RHOST}:${RPATH}"
+# DO NOT CHANGE THE -p OR --chmod OPTIONS HERE!!!
+# They are required for compatibility with the remote's access control
+# settings.
+rsync -priv --chmod='Dug=rwx,Fug=rw,o=' --checksum $* \
+  _site/ "${RHOST}:${RPATH}"
